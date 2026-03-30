@@ -19,6 +19,14 @@ function fn() {
     }
   };
 
+  config.petstore = {
+    baseUrl: 'https://petstore.swagger.io/v2',
+    paths: {
+      user: '/user',
+      userByName: '/user/'
+    }
+  };
+
   karate.configure('connectTimeout', 15000);
   karate.configure('readTimeout', 15000);
 
